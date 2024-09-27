@@ -1,4 +1,4 @@
-package org.example;
+import org.example.Geometry;
 
 import geometry2d.Circle;
 import geometry2d.Rectangle;
