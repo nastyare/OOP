@@ -1,25 +1,26 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class OddEvenSeparator {
-    private List<Integer> evenNumbers = new ArrayList<>();
-    private List<Integer> oddNumbers = new ArrayList<>();
+    private ArrayList<Integer> oddNumbers = new ArrayList<>();
+    private ArrayList<Integer> evenNumbers = new ArrayList<>();
 
-    public void addNumber(int number) {
+    public boolean addNumber(int number) {
         if (number % 2 == 0) {
             evenNumbers.add(number);
         } else {
             oddNumbers.add(number);
         }
+
+        return true;
     }
 
-    public void even() {
-        System.out.println("even numbers: " + evenNumbers);
+    public ArrayList<Integer> odd() {
+        return oddNumbers;
     }
 
-    public void odd() {
-        System.out.println("odd numbers: " + oddNumbers);
+    public ArrayList<Integer> even() {
+        return evenNumbers;
     }
 }

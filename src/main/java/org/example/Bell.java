@@ -4,15 +4,16 @@ public class Bell {
     private boolean isDing;
 
     public Bell() {
-        this.isDing = true;  // Начинаем с "ding"
+        this.isDing = true; // Начинаем с "ding"
     }
 
     public void sound() {
         if (isDing) {
-            System.out.println("ding");
+            System.out.print("ding ");
         } else {
-            System.out.println("dong");
+            System.out.print("dong ");
         }
-        isDing = !isDing;  // Меняем флаг на противоположный
+        isDing = !isDing; // Переключаем состояние
+
     }
 }

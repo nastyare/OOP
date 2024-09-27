@@ -1,9 +1,8 @@
-import org.example.Bell;
-import org.junit.jupiter.api.Test;
+package org.example;
 
+import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BellTest {
@@ -38,4 +37,5 @@ public class BellTest {
 
         System.setOut(originalOut);
     }
+
 }
